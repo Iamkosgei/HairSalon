@@ -9,7 +9,12 @@ public class StylistTest {
         assertTrue(newStyList instanceof Stylist);
     }
 
-
+    @Test
+    public void newStylist_getsFirstName_john()
+    {
+        Stylist newStyList = new Stylist("john","doe" ,"johndoe@gmail.com",30,1);
+        assertEquals("john", newStyList.getFirstName());
+    }
 
 
 
