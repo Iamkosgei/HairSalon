@@ -1,5 +1,17 @@
+import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
-class StylistTest {
+public class StylistTest {
+
+    @Test
+    public void newStylist_instantiatesCorrectly() {
+       Stylist newStyList = new Stylist("john","doe" ,"johndoe@gmail.com",30,1);
+        assertTrue(newStyList instanceof Stylist);
+    }
+
+
+
+
+
 
 }
