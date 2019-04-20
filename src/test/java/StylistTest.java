@@ -16,6 +16,13 @@ public class StylistTest {
         assertEquals("john", newStyList.getFirstName());
     }
 
+    @Test
+    public void newStylist_getsSecondName_john()
+    {
+        Stylist newStyList = new Stylist("john","doe" ,"johndoe@gmail.com",30,1);
+        assertEquals("doe", newStyList.getSecondName());
+    }
+
 
 
 
