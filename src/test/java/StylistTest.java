@@ -4,6 +4,8 @@ import org.junit.jupiter.api.Test;
 import org.sql2o.Connection;
 import org.sql2o.Sql2o;
 
+import java.util.Arrays;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 public class StylistTest {
@@ -87,5 +89,20 @@ public class StylistTest {
         Stylist secondStyList = new Stylist("jane","doe" ,"janedoe@gmail.com",30);
         secondStyList.save();
         assertEquals(Stylist.find(secondStyList.getId()), secondStyList);
+    }
+
+    @Test
+    public void getClients_retrievesALlClientsFromDatabase_clientsList() {
+        Stylist firstStyList = new Stylist("john","doe" ,"johndoe@gmail.com",30);
+        firstStyList.save();
+
+        Client newClient = new Client("jane","doe","0723320981","janedoe@gmail.com","Kenya","Nairobi",firstStyList.getId());
+        newClient.save();
+        Client newClient2 = new Client("john","doe","0723320923","johndoe@gmail.com","Kenya","Mombasa",firstStyList.getId());
+        newClient2.save();
+
+        Client[] clients = new Client[]{newClient,newClient2};
+
+        assertTrue(firstStyList.getClients().containsAll(Arrays.asList(clients)));
     }
 }
