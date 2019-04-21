@@ -5,8 +5,7 @@ import spark.template.velocity.VelocityTemplateEngine;
 import java.util.HashMap;
 import java.util.Map;
 
-import static spark.Spark.get;
-import static spark.Spark.staticFileLocation;
+import static spark.Spark.*;
 
 public class App {
     public static void main(String[] args) {
@@ -25,12 +24,12 @@ public class App {
 
         get("/stylists", (req, res) -> {
             Map<String, Object> model = new HashMap<>();
+            model.put("stylists",Stylist.all());
             model.put("template", "templates/stylists.vtl");
             return new VelocityTemplateEngine().render(
                     new ModelAndView(model, layout)
             );
         });
-
         get("/stylists/new", (req, res) -> {
             Map<String, Object> model = new HashMap<>();
             model.put("template", "templates/add-stylist-form.vtl");
@@ -38,6 +37,22 @@ public class App {
                     new ModelAndView(model, layout)
             );
         });
+
+        post("/stylists", (req, res) -> {
+            Map<String, Object> model = new HashMap<>();
+            String firstName = req.queryParams("firstName");
+            String secondName = req.queryParams("secondName");
+            String Age = req.queryParams("Age");
+            String Email = req.queryParams("Email");
+            Stylist stylist = new Stylist(firstName,secondName,Email,Integer.parseInt(Age));
+            stylist.save();
+            model.put("template", "templates/stylists.vtl");
+            return new VelocityTemplateEngine().render(
+                    new ModelAndView(model, layout)
+            );
+        });
+
+
 
 
 

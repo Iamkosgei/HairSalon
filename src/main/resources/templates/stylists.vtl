@@ -11,36 +11,18 @@
         </tr>
         </thead>
         <tbody>
+        #foreach ($stylist in $stylists)
         <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>19</td>
-            <td>@mdo</td>
+            <th scope="row">$stylist.getId()</th>
+            <td>$stylist.getFirstName()</td>
+            <td>$stylist.getSecondName()</td>
+            <td>$stylist.getAge()</td>
+            <td>$stylist.getEmail()</td>
             <td>
                 <button type="button" class="btn btn-primary btn-sm">View</button>
             </td>
         </tr>
-        <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>19</td>
-            <td>@fat</td>
-            <td>
-                <button type="button" class="btn btn-primary btn-sm">View</button>
-            </td>
-        </tr>
-        <tr>
-            <th scope="row">3</th>
-            <td>Larry</td>
-            <td>the Bird</td>
-            <td>20</td>
-            <td>@fat</td>
-            <td>
-                <button type="button" class="btn btn-primary btn-sm">View</button>
-            </td>
-        </tr>
+        #end
         </tbody>
     </table>
     <a class="btn btn-outline-light nav-item" href="/stylists/new"> NEW STYLIST </a>

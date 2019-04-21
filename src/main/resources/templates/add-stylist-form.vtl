@@ -2,26 +2,26 @@
 
 <div class="card container client-form">
     <h2 class="add-stylist-title"> Add Stylist</h2>
-    <form>
+    <form action="/stylists" method="post">
         <div class="form-row">
             <div class="form-group col-md-6">
                 <label for="firstName">First Name</label>
-                <input type="text" class="form-control" id="firstName" placeholder="John">
+                <input type="text" class="form-control" name="firstName" id="firstName" placeholder="John">
             </div>
             <div class="form-group col-md-6">
                 <label for="secondName">Second Name</label>
-                <input type="text" class="form-control" id="secondName" placeholder="Doe">
+                <input type="text" class="form-control" name="secondName" id="secondName" placeholder="Doe">
             </div>
         </div>
 
         <div class="form-row">
             <div class="form-group col-md-6">
-                <label for="inputAge">Age</label>
-                <input type="text" class="form-control" id="inputAge" placeholder="18">
+                <label for="Age">Age</label>
+                <input type="text" class="form-control" name="Age" id="Age" placeholder="18">
             </div>
             <div class="form-group col-md-6">
-                <label for="inputEmail">Email</label>
-                <input type="text" class="form-control" id="inputEmail" placeholder="xx@xx.xxx">
+                <label for="Email">Email</label>
+                <input type="text" class="form-control" name="Email" id="Email" placeholder="xx@xx.xxx">
             </div>
         </div>
         <button type="submit" class="btn btn-success">Save</button>
