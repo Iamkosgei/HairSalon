@@ -1,0 +1,72 @@
+body,html
+{
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.home-main
+{
+    background: url("/images/bg.png") center center/cover no-repeat;
+    width: 100vw;
+    height: 100vh;
+
+    color: white;
+}
+.title-tag
+{
+    height: 80vh;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+/* stylist */
+.stylist
+{
+    /*background: url("/images/bg.png") center center/cover no-repeat;*/
+    width: 100vw;
+    height: 100vh;
+}
+
+.stylist-content
+{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 4rem;
+}
+.add-stylist-title
+{
+    color: black;
+}
+
+/*.stylist-heading*/
+/*{*/
+/*    color: white;*/
+/*}*/
+
+/* client */
+.add-client
+{
+    /*background: url("/images/bg.png") center center/cover no-repeat;*/
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.client-form
+{
+    padding: 2rem;
+    color: black;
+    text-align: center;
+}
