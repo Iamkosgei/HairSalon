@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b98fa96-a849-481f-9859-4011900a8345" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ClientTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ClientTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -31,100 +30,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/StylistTest.java">
+        <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="706">
-              <caret line="89" column="5" lean-forward="true" selection-start-line="67" selection-start-column="1" selection-end-line="89" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Stylist.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
-              <caret line="46" column="39" selection-start-line="46" selection-start-column="39" selection-end-line="46" selection-end-column="39" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#372#373#0" expanded="true" />
-                <element signature="e#404#405#0" expanded="true" />
-                <element signature="e#441#442#0" expanded="true" />
-                <element signature="e#474#475#0" expanded="true" />
-                <element signature="e#506#507#0" expanded="true" />
-                <element signature="e#534#535#0" expanded="true" />
-                <element signature="e#561#562#0" expanded="true" />
-                <element signature="e#588#589#0" expanded="true" />
-                <element signature="e#654#655#0" expanded="true" />
-                <element signature="e#679#680#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/ClientTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="301">
-              <caret line="72" column="24" lean-forward="true" selection-start-line="72" selection-start-column="24" selection-end-line="72" selection-end-column="24" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#786#787#0" expanded="true" />
-                <element signature="e#843#844#0" expanded="true" />
-                <element signature="e#905#906#0" expanded="true" />
-                <element signature="e#968#969#0" expanded="true" />
-                <element signature="e#1032#1033#0" expanded="true" />
-                <element signature="e#1095#1096#0" expanded="true" />
-                <element signature="e#1278#1279#0" expanded="true" />
-                <element signature="e#1308#1309#0" expanded="true" />
-                <element signature="e#1403#1404#0" expanded="true" />
-                <element signature="e#1452#1453#0" expanded="true" />
-                <element signature="e#1481#1482#0" expanded="true" />
-                <element signature="e#1552#1553#0" expanded="true" />
-                <element signature="e#1605#1606#0" expanded="true" />
-                <element signature="e#1676#1677#0" expanded="true" />
-                <element signature="e#1710#1711#0" expanded="true" />
-                <element signature="e#1781#1782#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="150">
+              <caret line="10" column="18" lean-forward="true" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Client.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/App.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="60" column="48" lean-forward="true" selection-start-line="60" selection-start-column="48" selection-end-line="60" selection-end-column="48" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#533#534#0" expanded="true" />
-                <element signature="e#558#559#0" expanded="true" />
-                <element signature="e#595#596#0" expanded="true" />
-                <element signature="e#628#629#0" expanded="true" />
-                <element signature="e#664#665#0" expanded="true" />
-                <element signature="e#696#697#0" expanded="true" />
-                <element signature="e#728#729#0" expanded="true" />
-                <element signature="e#756#757#0" expanded="true" />
-                <element signature="e#788#789#0" expanded="true" />
-                <element signature="e#816#817#0" expanded="true" />
-                <element signature="e#850#851#0" expanded="true" />
-                <element signature="e#880#881#0" expanded="true" />
-                <element signature="e#913#914#0" expanded="true" />
-                <element signature="e#942#943#0" expanded="true" />
-                <element signature="e#975#976#0" expanded="true" />
-                <element signature="e#1007#1008#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/DB.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="103" selection-start-line="3" selection-start-column="103" selection-end-line="3" selection-end-column="103" />
+            <state relative-caret-position="135">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
             </state>
           </provider>
         </entry>
@@ -134,8 +52,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -153,10 +71,11 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/java/DB.java" />
-        <option value="$PROJECT_DIR$/src/test/java/StylistTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Stylist.java" />
         <option value="$PROJECT_DIR$/src/main/java/Client.java" />
         <option value="$PROJECT_DIR$/src/test/java/ClientTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Stylist.java" />
+        <option value="$PROJECT_DIR$/src/test/java/StylistTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/App.java" />
       </list>
     </option>
   </component>
@@ -200,6 +119,13 @@
               <item name="HairSalon" type="b2602c69:ProjectViewProjectNode" />
               <item name="HairSalon" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HairSalon" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HairSalon" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
@@ -223,6 +149,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/public/images" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -329,7 +256,7 @@
       <option name="presentableId" value="Default" />
       <updated>1555742367252</updated>
       <workItem from="1555742368581" duration="5575000" />
-      <workItem from="1555826679798" duration="19084000" />
+      <workItem from="1555826679798" duration="20746000" />
     </task>
     <task id="LOCAL-00001" summary="added git ignore to avoid tracking unnecessary files">
       <created>1555745058524</created>
@@ -415,16 +342,31 @@
       <option name="project" value="LOCAL" />
       <updated>1555856147498</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Added test to check whether clients are saved to the database, find clients by their id and retrieve all clients.">
+      <created>1555860377458</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1555860377458</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Added methods to save clients to the database, find clients by their id and retrieve all clients.">
+      <created>1555860395543</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1555860395543</updated>
+    </task>
+    <task id="LOCAL-00015" summary="added implementation to retrieve clients belonging to a given stylist based on their id">
+      <created>1555861434250</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1555861434250</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="StylistTest - 2019.04.21 at 13h 08m 44s.xml">
-      <configuration name="StylistTest" configurationId="GradleRunConfiguration" />
-    </history-entry>
-    <history-entry file="StylistTest - 2019.04.21 at 16h 43m 16s.xml">
-      <configuration name="StylistTest" configurationId="GradleRunConfiguration" />
-    </history-entry>
     <history-entry file="Tests_in_'HairSalon_test' - 2019.04.21 at 17h 04m 41s.xml">
       <configuration name="Tests in 'HairSalon.test'" configurationId="GradleRunConfiguration" />
     </history-entry>
@@ -449,15 +391,20 @@
     <history-entry file="Tests_in_'HairSalon_test' - 2019.04.21 at 18h 12m 29s.xml">
       <configuration name="Tests in 'HairSalon.test'" configurationId="GradleRunConfiguration" />
     </history-entry>
+    <history-entry file="Tests_in_'HairSalon_test' - 2019.04.21 at 18h 34m 55s.xml">
+      <configuration name="Tests in 'HairSalon.test'" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="Tests_in_'HairSalon_test' - 2019.04.21 at 18h 36m 16s.xml">
+      <configuration name="Tests in 'HairSalon.test'" configurationId="GradleRunConfiguration" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24659000" />
+    <option name="totallyTimeSpent" value="26321000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1920" height="1002" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49819493" visible="true" weight="0.17982924" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49819493" visible="true" weight="0.17982924" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -507,7 +454,10 @@
     <MESSAGE value="added getters for each field" />
     <MESSAGE value="added a setup and teardown method to setup and clear the table respectively" />
     <MESSAGE value="added test to check whether all the fields instantiates correctly" />
-    <option name="LAST_COMMIT_MESSAGE" value="added test to check whether all the fields instantiates correctly" />
+    <MESSAGE value="Added test to check whether clients are saved to the database, find clients by their id and retrieve all clients." />
+    <MESSAGE value="Added methods to save clients to the database, find clients by their id and retrieve all clients." />
+    <MESSAGE value="added implementation to retrieve clients belonging to a given stylist based on their id" />
+    <option name="LAST_COMMIT_MESSAGE" value="added implementation to retrieve clients belonging to a given stylist based on their id" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.gitignore">
@@ -520,24 +470,10 @@
     <entry file="file://$PROJECT_DIR$/gradlew">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DB.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="103" selection-start-line="3" selection-start-column="103" selection-end-line="3" selection-end-column="103" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Stylist.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="46" column="39" selection-start-line="46" selection-start-column="39" selection-end-line="46" selection-end-column="39" />
+        <state relative-caret-position="1035">
+          <caret line="69" column="16" lean-forward="true" selection-start-line="69" selection-start-column="16" selection-end-line="69" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#372#373#0" expanded="true" />
@@ -556,8 +492,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/StylistTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="706">
-          <caret line="89" column="5" lean-forward="true" selection-start-line="67" selection-start-column="1" selection-end-line="89" selection-end-column="5" />
+        <state relative-caret-position="571">
+          <caret line="97" lean-forward="true" selection-start-line="97" selection-end-line="97" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -566,8 +502,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ClientTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="72" column="24" lean-forward="true" selection-start-line="72" selection-start-column="24" selection-end-line="72" selection-end-column="24" />
+        <state relative-caret-position="151">
+          <caret line="14" selection-start-line="14" selection-end-line="15" selection-end-column="99" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#786#787#0" expanded="true" />
@@ -592,8 +528,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Client.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="60" column="48" lean-forward="true" selection-start-line="60" selection-start-column="48" selection-end-line="60" selection-end-column="48" />
+        <state relative-caret-position="721">
+          <caret line="95" lean-forward="true" selection-start-line="95" selection-end-line="95" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#533#534#0" expanded="true" />
@@ -613,6 +549,27 @@
             <element signature="e#975#976#0" expanded="true" />
             <element signature="e#1007#1008#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/DB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="103" selection-start-line="3" selection-start-column="103" selection-end-line="3" selection-end-column="103" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="18" lean-forward="true" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
