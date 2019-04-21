@@ -46,7 +46,7 @@ public class App {
             String Email = req.queryParams("Email");
             Stylist stylist = new Stylist(firstName,secondName,Email,Integer.parseInt(Age));
             stylist.save();
-            model.put("template", "templates/stylists.vtl");
+            model.put("template", "templates/stylist-added-success-page.vtl");
             return new VelocityTemplateEngine().render(
                     new ModelAndView(model, layout)
             );
