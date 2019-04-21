@@ -1,46 +1,91 @@
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.sql2o.Connection;
+import org.sql2o.Sql2o;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 public class StylistTest {
+    @BeforeEach
+    public void setUp() {
+        DB.sql2o = new Sql2o("jdbc:postgresql://localhost:5432/hair_salon_test", "kosgei", "12345678");
+    }
+
+    @AfterEach
+    public void tearDown() {
+        try (Connection con = DB.sql2o.open()) {
+            String sql = "DELETE FROM stylists *;";
+            con.createQuery(sql).executeUpdate();
+        }
+    }
 
     @Test
     public void newStylist_instantiatesCorrectly() {
-       Stylist newStyList = new Stylist("john","doe" ,"johndoe@gmail.com",30,1);
+       Stylist newStyList = new Stylist("john","doe" ,"johndoe@gmail.com",30);
         assertTrue(newStyList instanceof Stylist);
     }
 
     @Test
     public void newStylist_getsFirstName_john()
     {
-        Stylist newStyList = new Stylist("john","doe" ,"johndoe@gmail.com",30,1);
+        Stylist newStyList = new Stylist("john","doe" ,"johndoe@gmail.com",30);
         assertEquals("john", newStyList.getFirstName());
     }
 
     @Test
     public void newStylist_getsSecondName_doe()
     {
-        Stylist newStyList = new Stylist("john","doe" ,"johndoe@gmail.com",30,1);
+        Stylist newStyList = new Stylist("john","doe" ,"johndoe@gmail.com",30);
         assertEquals("doe", newStyList.getSecondName());
     }
 
     @Test
     public void newStylist_getsEmail_johndoe()
     {
-        Stylist newStyList = new Stylist("john","doe" ,"johndoe@gmail.com",30,1);
+        Stylist newStyList = new Stylist("john","doe" ,"johndoe@gmail.com",30);
         assertEquals("johndoe@gmail.com", newStyList.getEmail());
     }
 
     @Test
     public void newStylist_getsAge_30()
     {
-        Stylist newStyList = new Stylist("john","doe" ,"johndoe@gmail.com",30,1);
+        Stylist newStyList = new Stylist("john","doe" ,"johndoe@gmail.com",30);
         assertEquals(30, newStyList.getAge());
     }
 
     @Test
-    public void newStylist_getsId_1()
-    {
-        Stylist newStyList = new Stylist("john","doe" ,"johndoe@gmail.com",30,1);
-        assertEquals(1, newStyList.getId());
+    public void all_returnsAllInstancesOfStylist_true() {
+        Stylist firstStyList = new Stylist("john","doe" ,"johndoe@gmail.com",30);
+        firstStyList.save();
+        Stylist secondStyList = new Stylist("john","doe" ,"johndoe@gmail.com",30);
+        secondStyList.save();
+
+        assertEquals(true, Stylist.all().get(0).equals(firstStyList));
+        assertEquals(true, Stylist.all().get(1).equals(secondStyList));
+    }
+
+    @Test
+    public void save_assignsIdToObject() {
+        Stylist firstStyList = new Stylist("john","doe" ,"johndoe@gmail.com",30);
+        firstStyList.save();
+        Stylist savedStylist = Stylist.all().get(0);
+        assertEquals(firstStyList.getId(), savedStylist.getId());
+    }
+
+    @Test
+    public void getId_stylistInstantiateWithAnID() {
+        Stylist firstStyList = new Stylist("john","doe" ,"johndoe@gmail.com",30);
+        firstStyList.save();
+        assertTrue(firstStyList.getId() > 0);
+    }
+
+    @Test
+    public void find_returnsStyListWithSameId_secondStyList() {
+        Stylist firstStyList = new Stylist("john","doe" ,"johndoe@gmail.com",30);
+        firstStyList.save();
+        Stylist secondStyList = new Stylist("jane","doe" ,"janedoe@gmail.com",30);
+        secondStyList.save();
+        assertEquals(Stylist.find(secondStyList.getId()), secondStyList);
     }
 }
