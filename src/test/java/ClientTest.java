@@ -7,17 +7,18 @@ import org.sql2o.Sql2o;
 import static org.junit.jupiter.api.Assertions.*;
 
 class ClientTest {
-    Client newClient;
+    Client newClient, newClient2;
 
     @BeforeEach
     public void setUp() {
         DB.sql2o = new Sql2o("jdbc:postgresql://localhost:5432/hair_salon_test", "kosgei", "12345678");
         newClient = new Client("jane","doe","0723320981","janedoe@gmail.com","Kenya","Nairobi",1);
+        newClient2 = new Client("john","doe","0723320923","johndoe@gmail.com","Kenya","Mombasa",1);
     }
     @AfterEach
     public void tearDown() {
         try (Connection con = DB.sql2o.open()) {
-            String sql = "DELETE FROM stylists *;";
+            String sql = "DELETE FROM clients *;";
             con.createQuery(sql).executeUpdate();
         }
     }
@@ -65,6 +66,36 @@ class ClientTest {
     public void newClient_getsStylistId_1()
     {
         assertEquals(1, newClient.getStylistid());
+    }
+
+    @Test
+    public void all_returnsAllInstancesOfClients_true() {
+       newClient.save();
+       newClient2.save();
+
+        assertEquals(true, Client.all().get(0).equals(newClient));
+        assertEquals(true, Client.all().get(1).equals(newClient2));
+    }
+
+    @Test
+    public void save_assignsIdToObject() {
+        newClient.save();
+        Client savedClient = Client.all().get(0);
+        assertEquals(newClient.getId(), savedClient.getId());
+    }
+
+    @Test
+    public void getId_clientInstantiateWithAnID() {
+        newClient.save();
+        assertTrue(newClient.getId() > 0);
+    }
+
+    @Test
+    public void find_returnsClientWithSameId_newClient2() {
+        newClient.save();
+       newClient2.save();
+
+        assertEquals(Client.find(newClient2.getId()), newClient2);
     }
 
 }

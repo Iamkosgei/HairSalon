@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b98fa96-a849-481f-9859-4011900a8345" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Client.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ClientTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ClientTest.java" afterDir="false" />
     </list>
@@ -32,8 +33,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/StylistTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="25" lean-forward="true" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="25" />
+            <state relative-caret-position="706">
+              <caret line="89" column="5" lean-forward="true" selection-start-line="67" selection-start-column="1" selection-end-line="89" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -44,8 +45,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Stylist.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="241">
+              <caret line="46" column="39" selection-start-line="46" selection-start-column="39" selection-end-line="46" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#372#373#0" expanded="true" />
@@ -64,11 +65,40 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ClientTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="301">
+              <caret line="72" column="24" lean-forward="true" selection-start-line="72" selection-start-column="24" selection-end-line="72" selection-end-column="24" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#786#787#0" expanded="true" />
+                <element signature="e#843#844#0" expanded="true" />
+                <element signature="e#905#906#0" expanded="true" />
+                <element signature="e#968#969#0" expanded="true" />
+                <element signature="e#1032#1033#0" expanded="true" />
+                <element signature="e#1095#1096#0" expanded="true" />
+                <element signature="e#1278#1279#0" expanded="true" />
+                <element signature="e#1308#1309#0" expanded="true" />
+                <element signature="e#1403#1404#0" expanded="true" />
+                <element signature="e#1452#1453#0" expanded="true" />
+                <element signature="e#1481#1482#0" expanded="true" />
+                <element signature="e#1552#1553#0" expanded="true" />
+                <element signature="e#1605#1606#0" expanded="true" />
+                <element signature="e#1676#1677#0" expanded="true" />
+                <element signature="e#1710#1711#0" expanded="true" />
+                <element signature="e#1781#1782#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Client.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="18" lean-forward="true" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+            <state relative-caret-position="196">
+              <caret line="60" column="48" lean-forward="true" selection-start-line="60" selection-start-column="48" selection-end-line="60" selection-end-column="48" />
               <folding>
+                <element signature="imports" expanded="true" />
                 <element signature="e#533#534#0" expanded="true" />
                 <element signature="e#558#559#0" expanded="true" />
                 <element signature="e#595#596#0" expanded="true" />
@@ -85,20 +115,6 @@
                 <element signature="e#942#943#0" expanded="true" />
                 <element signature="e#975#976#0" expanded="true" />
                 <element signature="e#1007#1008#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/ClientTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="95" selection-start-line="9" selection-start-column="95" selection-end-line="9" selection-end-column="95" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#176#177#0" expanded="true" />
-                <element signature="e#212#213#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -122,6 +138,11 @@
         <option value="JUnit5 Test Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>added a setup and teardown method to setup and clear the table respectively</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -228,7 +249,27 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.StylistTest">
+  <component name="RunManager" selected="Gradle.Tests in 'HairSalon.test'">
+    <configuration name="ClientTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;ClientTest&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="StylistTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -271,8 +312,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.StylistTest" />
         <item itemvalue="Gradle.Tests in 'HairSalon.test'" />
+        <item itemvalue="Gradle.ClientTest" />
+        <item itemvalue="Gradle.StylistTest" />
       </list>
     </recent_temporary>
   </component>
@@ -287,7 +329,7 @@
       <option name="presentableId" value="Default" />
       <updated>1555742367252</updated>
       <workItem from="1555742368581" duration="5575000" />
-      <workItem from="1555826679798" duration="14281000" />
+      <workItem from="1555826679798" duration="19084000" />
     </task>
     <task id="LOCAL-00001" summary="added git ignore to avoid tracking unnecessary files">
       <created>1555745058524</created>
@@ -352,49 +394,70 @@
       <option name="project" value="LOCAL" />
       <updated>1555854824305</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="added getters for each field">
+      <created>1555855309632</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1555855309632</updated>
+    </task>
+    <task id="LOCAL-00011" summary="added a setup and teardown method to setup and clear the table respectively">
+      <created>1555855361367</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1555855361367</updated>
+    </task>
+    <task id="LOCAL-00012" summary="added test to check whether all the fields instantiates correctly">
+      <created>1555856147498</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1555856147498</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="StylistTest - 2019.04.21 at 12h 39m 26s.xml">
-      <configuration name="StylistTest" configurationId="GradleRunConfiguration" />
-    </history-entry>
-    <history-entry file="StylistTest - 2019.04.21 at 12h 40m 54s.xml">
-      <configuration name="StylistTest" configurationId="GradleRunConfiguration" />
-    </history-entry>
-    <history-entry file="StylistTest - 2019.04.21 at 12h 41m 16s.xml">
-      <configuration name="StylistTest" configurationId="GradleRunConfiguration" />
-    </history-entry>
-    <history-entry file="StylistTest - 2019.04.21 at 12h 43m 08s.xml">
-      <configuration name="StylistTest" configurationId="GradleRunConfiguration" />
-    </history-entry>
-    <history-entry file="StylistTest - 2019.04.21 at 12h 51m 48s.xml">
-      <configuration name="StylistTest" configurationId="GradleRunConfiguration" />
-    </history-entry>
-    <history-entry file="StylistTest - 2019.04.21 at 12h 51m 59s.xml">
-      <configuration name="StylistTest" configurationId="GradleRunConfiguration" />
-    </history-entry>
-    <history-entry file="StylistTest - 2019.04.21 at 13h 00m 39s.xml">
-      <configuration name="StylistTest" configurationId="GradleRunConfiguration" />
-    </history-entry>
-    <history-entry file="StylistTest - 2019.04.21 at 13h 05m 23s.xml">
-      <configuration name="StylistTest" configurationId="GradleRunConfiguration" />
-    </history-entry>
     <history-entry file="StylistTest - 2019.04.21 at 13h 08m 44s.xml">
       <configuration name="StylistTest" configurationId="GradleRunConfiguration" />
     </history-entry>
     <history-entry file="StylistTest - 2019.04.21 at 16h 43m 16s.xml">
       <configuration name="StylistTest" configurationId="GradleRunConfiguration" />
     </history-entry>
+    <history-entry file="Tests_in_'HairSalon_test' - 2019.04.21 at 17h 04m 41s.xml">
+      <configuration name="Tests in 'HairSalon.test'" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="Tests_in_'HairSalon_test' - 2019.04.21 at 17h 06m 40s.xml">
+      <configuration name="Tests in 'HairSalon.test'" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="Tests_in_'HairSalon_test' - 2019.04.21 at 17h 07m 01s.xml">
+      <configuration name="Tests in 'HairSalon.test'" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="Tests_in_'HairSalon_test' - 2019.04.21 at 17h 14m 30s.xml">
+      <configuration name="Tests in 'HairSalon.test'" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="ClientTest - 2019.04.21 at 18h 10m 40s.xml">
+      <configuration name="ClientTest" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="ClientTest - 2019.04.21 at 18h 11m 27s.xml">
+      <configuration name="ClientTest" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="ClientTest - 2019.04.21 at 18h 12m 16s.xml">
+      <configuration name="ClientTest" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="Tests_in_'HairSalon_test' - 2019.04.21 at 18h 12m 29s.xml">
+      <configuration name="Tests in 'HairSalon.test'" configurationId="GradleRunConfiguration" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19856000" />
+    <option name="totallyTimeSpent" value="24659000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1920" height="1002" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49819493" visible="true" weight="0.23585913" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49819493" visible="true" weight="0.17982924" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -441,7 +504,10 @@
     <MESSAGE value=" created Db class to manage database interactions." />
     <MESSAGE value="added methods to save stylist, get a list of all stylist and find a given stylist and their respective tests." />
     <MESSAGE value="added Client class and its test to be used to create and handle client instances." />
-    <option name="LAST_COMMIT_MESSAGE" value="added Client class and its test to be used to create and handle client instances." />
+    <MESSAGE value="added getters for each field" />
+    <MESSAGE value="added a setup and teardown method to setup and clear the table respectively" />
+    <MESSAGE value="added test to check whether all the fields instantiates correctly" />
+    <option name="LAST_COMMIT_MESSAGE" value="added test to check whether all the fields instantiates correctly" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.gitignore">
@@ -470,8 +536,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Stylist.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="241">
+          <caret line="46" column="39" selection-start-line="46" selection-start-column="39" selection-end-line="46" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#372#373#0" expanded="true" />
@@ -488,11 +554,48 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/StylistTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="706">
+          <caret line="89" column="5" lean-forward="true" selection-start-line="67" selection-start-column="1" selection-end-line="89" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ClientTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="72" column="24" lean-forward="true" selection-start-line="72" selection-start-column="24" selection-end-line="72" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#786#787#0" expanded="true" />
+            <element signature="e#843#844#0" expanded="true" />
+            <element signature="e#905#906#0" expanded="true" />
+            <element signature="e#968#969#0" expanded="true" />
+            <element signature="e#1032#1033#0" expanded="true" />
+            <element signature="e#1095#1096#0" expanded="true" />
+            <element signature="e#1278#1279#0" expanded="true" />
+            <element signature="e#1308#1309#0" expanded="true" />
+            <element signature="e#1403#1404#0" expanded="true" />
+            <element signature="e#1452#1453#0" expanded="true" />
+            <element signature="e#1481#1482#0" expanded="true" />
+            <element signature="e#1552#1553#0" expanded="true" />
+            <element signature="e#1605#1606#0" expanded="true" />
+            <element signature="e#1676#1677#0" expanded="true" />
+            <element signature="e#1710#1711#0" expanded="true" />
+            <element signature="e#1781#1782#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Client.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="18" lean-forward="true" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+        <state relative-caret-position="196">
+          <caret line="60" column="48" lean-forward="true" selection-start-line="60" selection-start-column="48" selection-end-line="60" selection-end-column="48" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="e#533#534#0" expanded="true" />
             <element signature="e#558#559#0" expanded="true" />
             <element signature="e#595#596#0" expanded="true" />
@@ -509,28 +612,6 @@
             <element signature="e#942#943#0" expanded="true" />
             <element signature="e#975#976#0" expanded="true" />
             <element signature="e#1007#1008#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/StylistTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="25" lean-forward="true" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ClientTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="95" selection-start-line="9" selection-start-column="95" selection-end-line="9" selection-end-column="95" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#176#177#0" expanded="true" />
-            <element signature="e#212#213#0" expanded="true" />
           </folding>
         </state>
       </provider>
