@@ -5,19 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
           integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <title>Hair Salon</title>
+    <title>The Salon</title>
 </head>
 
 <body>
 <div class="home-main">
-    <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <a class="navbar-brand" href="/">HOME</a>
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background: rgba(0, 0, 0, 0.6);">
+            <div class="container">
+            <a class="navbar-brand font-weight-bold" href="/">HOME</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -27,15 +28,18 @@
                 </ul>
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="/stylists">STYLISTS</a>
+                        <a class="nav-link font-weight-bold " href="/stylists">STYLISTS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/clients">CLIENTS</a>
+                        <a class="nav-link font-weight-bold" href="/clients">CLIENTS</a>
                     </li>
                 </ul>
             </div>
+            </div>
         </nav>
+    <div class="container">
     #parse($template)
+    </div>
     </div>
 </div>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
