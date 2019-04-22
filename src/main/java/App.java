@@ -155,5 +155,34 @@ public class App {
             );
         });
 
+        get("/client/:id/edit", (req, res) -> {
+            Map<String, Object> model = new HashMap<>();
+            Client client = Client.find(Integer.parseInt(req.params(":id")));
+            model.put("client", client);
+            model.put("stylists",Stylist.all());
+            model.put("template", "templates/client-edit.vtl");
+            return new VelocityTemplateEngine().render(
+                    new ModelAndView(model, layout)
+            );
+        });
+
+        post("/client/:id/edit", (req, res) -> {
+            Map<String, Object> model = new HashMap<>();
+            String firstName = req.queryParams("firstName");
+            String secondName = req.queryParams("secondName");
+            String phone = req.queryParams("phone");
+            String email = req.queryParams("email");
+            String country = req.queryParams("country");
+            String county = req.queryParams("county");
+            String stylistId = req.queryParams("stylistId");
+            Client client = Client.find(Integer.parseInt(req.params(":id")));
+            client.update(firstName,secondName,phone,email,country,county,Integer.parseInt(stylistId));
+            String url = String.format("/client/%d",client.getId());
+            res.redirect(url);
+            return new VelocityTemplateEngine().render(
+                    new ModelAndView(model, layout)
+            );
+        });
+
     }
 }

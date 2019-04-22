@@ -1,0 +1,47 @@
+<div class="card container client-form">
+    <h2> Edit Client</h2>
+    <form method="post" action="/client/$client.getId()/edit">
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="firstName">First Name</label>
+                <input type="text" class="form-control" id="firstName"  name="firstName" placeholder="John" value="$client.getFirst_name()" required>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="secondName">Second Name</label>
+                <input type="text" class="form-control" id="secondName" name="secondName" placeholder="Doe" value="$client.getLast_name()" required>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="phone">Phone</label>
+                <input type="text" class="form-control" id="phone" name="phone" placeholder="07xx" value="$client.getPhone()" required>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="email">Email</label>
+                <input type="text" class="form-control" id="email" name="email" placeholder="xx@xx.xxx" value="$client.getEmail()" required>
+            </div>
+        </div>
+
+
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="country">Country</label>
+                <input type="text" class="form-control" id="country" name="country" placeholder="Kenya" value="$client.getCountry()" required>
+            </div>
+            <div class="form-group col-md-4">
+                <label for="county">County</label>
+                <input type="text" class="form-control" id="county" name="county" placeholder="Nairobi" value="$client.getCounty()" required>
+            </div>
+            <div class="form-group col-md-2">
+                <label for="stylistId">Stylist</label>
+                <select id="stylistId" name="stylistId" class="form-control">
+                    #foreach($stylist in $stylists)
+                    <option value="$stylist.getId()">$stylist.getFirstName() $stylist.getSecondName()</option>
+                    #end
+                </select>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-success">Save</button>
+    </form>
+</div>
