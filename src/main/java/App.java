@@ -62,6 +62,16 @@ public class App {
             );
         });
 
+        post("/stylist/:id/delete", (req, res) -> {
+            Map<String, Object> model = new HashMap<>();
+            Stylist stylist = Stylist.find(Integer.parseInt(req.params(":id")));
+            stylist.delete();
+            model.put("template", "templates/stylist-delete-success-page.vtl");
+            return new VelocityTemplateEngine().render(
+                    new ModelAndView(model, layout)
+            );
+        });
+
 
 
 

@@ -105,4 +105,15 @@ public class StylistTest {
 
         assertTrue(firstStyList.getClients().containsAll(Arrays.asList(clients)));
     }
+
+    @Test
+    public void delete_deletesStylist_true() {
+        Stylist firstStyList = new Stylist("john","doe" ,"johndoe@gmail.com",30);
+        firstStyList.save();
+        int newStylistId = firstStyList.getId();
+        firstStyList .delete();
+        assertEquals(null, Client.find(newStylistId));
+    }
+
+
 }
