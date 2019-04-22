@@ -1,43 +1,44 @@
 <div class="card container client-form">
     <h2> Add Client</h2>
-    <form>
+    <form method="post" action="/clients">
         <div class="form-row">
             <div class="form-group col-md-6">
                 <label for="firstName">First Name</label>
-                <input type="text" class="form-control" id="firstName" placeholder="John">
+                <input type="text" class="form-control" id="firstName"  name="firstName" placeholder="John">
             </div>
             <div class="form-group col-md-6">
                 <label for="secondName">Second Name</label>
-                <input type="text" class="form-control" id="secondName" placeholder="Doe">
+                <input type="text" class="form-control" id="secondName" name="secondName" placeholder="Doe">
             </div>
         </div>
 
         <div class="form-row">
             <div class="form-group col-md-6">
-                <label for="inputPhone">Phone</label>
-                <input type="text" class="form-control" id="inputPhone" placeholder="07xx">
+                <label for="phone">Phone</label>
+                <input type="text" class="form-control" id="phone" name="phone" placeholder="07xx">
             </div>
             <div class="form-group col-md-6">
-                <label for="inputEmail">Email</label>
-                <input type="text" class="form-control" id="inputEmail" placeholder="xx@xx.xxx">
+                <label for="email">Email</label>
+                <input type="text" class="form-control" id="email" name="email" placeholder="xx@xx.xxx">
             </div>
         </div>
 
 
         <div class="form-row">
             <div class="form-group col-md-6">
-                <label for="inputCity">Country</label>
-                <input type="text" class="form-control" id="inputCity" placeholder="Kenya">
+                <label for="country">Country</label>
+                <input type="text" class="form-control" id="country" name="country" placeholder="Kenya">
             </div>
             <div class="form-group col-md-4">
-                <label for="inputCountry">County</label>
-                <input type="text" class="form-control" id="inputCountry" placeholder="Nairobi">
+                <label for="county">County</label>
+                <input type="text" class="form-control" id="county" name="county" placeholder="Nairobi">
             </div>
             <div class="form-group col-md-2">
-                <label for="inputStylist">Stylist</label>
-                <select id="inputStylist" class="form-control">
-                    <option selected>Choose...</option>
-                    <option>...</option>
+                <label for="stylistId">Stylist</label>
+                <select id="stylistId" name="stylistId" class="form-control">
+                    #foreach($stylist in $stylists)
+                    <option value="$stylist.getId()">$stylist.getFirstName() $stylist.getSecondName()</option>
+                    #end
                 </select>
             </div>
         </div>

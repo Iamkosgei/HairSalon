@@ -58,6 +58,7 @@ public class App {
 
         get("/clients", (req, res) -> {
             Map<String, Object> model = new HashMap<>();
+            model.put("clients", Client.all());
             model.put("template", "templates/clients.vtl");
             return new VelocityTemplateEngine().render(
                     new ModelAndView(model, layout)
@@ -65,7 +66,25 @@ public class App {
         });
         get("/clients/new", (req, res) -> {
             Map<String, Object> model = new HashMap<>();
+            model.put("stylists",Stylist.all());
             model.put("template", "templates/add-client-form.vtl");
+            return new VelocityTemplateEngine().render(
+                    new ModelAndView(model, layout)
+            );
+        });
+
+        post("/clients", (req, res) -> {
+            Map<String, Object> model = new HashMap<>();
+            String firstName = req.queryParams("firstName");
+            String secondName = req.queryParams("secondName");
+            String phone = req.queryParams("phone");
+            String email = req.queryParams("email");
+            String country = req.queryParams("country");
+            String county = req.queryParams("county");
+            String stylistId = req.queryParams("stylistId");
+            Client client = new Client(firstName,secondName,phone,email,country,county,Integer.parseInt(stylistId));
+            client.save();
+            model.put("template", "templates/client-added-success-page.vtl");
             return new VelocityTemplateEngine().render(
                     new ModelAndView(model, layout)
             );
