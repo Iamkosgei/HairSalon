@@ -1,0 +1,26 @@
+<div class="card mb-3 text-center" style="color: black">
+    <div class="row no-gutters">
+        <div class="col-md-4" style="background: #DCDCDC; padding:3rem">
+            <i class="far fa-user fa-7x"></i>
+            <h2>$client.getFirst_name() $client.getLast_name()</h2>
+            <p><i class="fas fa-phone"></i> Phone: $client.getPhone()</p>
+
+            <form action="/stylist/$stylist.getId()/delete" method="post">
+                <button type="submit" class="btn btn-danger">Delete</button>
+                <a href="/stylist/$stylist.getId()/edit" class="btn btn-outline-success">Edit</a>
+            </form>
+        </div>
+
+        <div class="col-md-8" style="padding:3rem">
+            <div class="card-body">
+                <h2 class="card-title">Details</h2>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><i class="fas fa-envelope-open"></i> Email: $client.getEmail()</li>
+                    <li class="list-group-item"><i class="fas fa-flag"></i> Country: $client.getCountry() </li>
+                    <li class="list-group-item"><i class="fas fa-flag"></i> County: $client.getCounty() </li>
+                    <li class="list-group-item"><i class="fas fa-female"></i> Stylist ID: $client.getStylistid()</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

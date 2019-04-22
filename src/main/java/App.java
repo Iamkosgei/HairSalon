@@ -135,5 +135,15 @@ public class App {
             );
         });
 
+        get("/client/:id", (req, res) -> {
+            Map<String, Object> model = new HashMap<>();
+            Client client = Client.find(Integer.parseInt(req.params(":id")));
+            model.put("client", client);
+            model.put("template", "templates/client.vtl");
+            return new VelocityTemplateEngine().render(
+                    new ModelAndView(model, layout)
+            );
+        });
+
     }
 }
