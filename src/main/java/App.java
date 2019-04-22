@@ -82,6 +82,21 @@ public class App {
             );
         });
 
+        post("/stylist/:id/edit", (req, res) -> {
+            Map<String, Object> model = new HashMap<>();
+            String firstName = req.queryParams("firstName");
+            String secondName = req.queryParams("secondName");
+            String age = req.queryParams("Age");
+            String email = req.queryParams("Email");
+            Stylist stylist = Stylist.find(Integer.parseInt(req.params(":id")));
+            stylist.update(firstName,secondName,email,Integer.parseInt(age));
+            String url = String.format("/stylist/%d",stylist.getId());
+            res.redirect(url);
+            return new VelocityTemplateEngine().render(
+                    new ModelAndView(model, layout)
+            );
+        });
+
 
 
 

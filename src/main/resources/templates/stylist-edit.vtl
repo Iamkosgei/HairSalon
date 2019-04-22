@@ -1,7 +1,7 @@
 <body class="add-client">
 <div class="card container client-form">
     <h2 class="add-stylist-title"> Edit Stylist</h2>
-    <form action="/stylists" method="post">
+    <form action="/stylist/$stylist.getId()/edit" method="post">
         <div class="form-row">
             <div class="form-group col-md-6">
                 <label for="firstName">First Name</label>

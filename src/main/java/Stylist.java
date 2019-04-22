@@ -93,4 +93,17 @@ public class Stylist {
         }
     }
 
+    public void update(String firstname,String lastname, String email,int age) {
+        try(Connection con = DB.sql2o.open()) {
+            String sql = "UPDATE stylists SET firstname = :firstname,lastname = :lastname,email = :email, age = :age WHERE id = :id";
+            con.createQuery(sql)
+                    .addParameter("firstname",firstname )
+                    .addParameter("lastname",lastname )
+                    .addParameter("email",email )
+                    .addParameter("age",age )
+                    .addParameter("id", id)
+                    .executeUpdate();
+        }
+    }
+
 }
