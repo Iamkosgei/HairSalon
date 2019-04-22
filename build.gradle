@@ -1,9 +1,13 @@
 plugins {
     id 'java'
 }
+apply plugin: 'application'
 
 group 'xyz.kosgei.hairSalon'
 version '1.0-SNAPSHOT'
+
+applicationName = "HairSalon"
+mainClassName = 'App'
 
 sourceCompatibility = 1.8
 
@@ -29,3 +33,5 @@ test {
         events "passed", "skipped", "failed"
     }
 }
+
+task stage(dependsOn: ['clean', 'installDist'])
