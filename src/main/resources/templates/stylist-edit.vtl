@@ -1,0 +1,30 @@
+<body class="add-client">
+<div class="card container client-form">
+    <h2 class="add-stylist-title"> Edit Stylist</h2>
+    <form action="/stylists" method="post">
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="firstName">First Name</label>
+                <input type="text" class="form-control" name="firstName" id="firstName" placeholder="John" value="$stylist.getFirstName()">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="secondName">Second Name</label>
+                <input type="text" class="form-control" name="secondName" id="secondName" placeholder="Doe" value="$stylist.getSecondName()">
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="Age">Age</label>
+                <input type="text" class="form-control" name="Age" id="Age" placeholder="18" value="$stylist.getAge()">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="Email">Email</label>
+                <input type="text" class="form-control" name="Email" id="Email" placeholder="xx@xx.xxx" value="$stylist.getEmail()">
+            </div>
+        </div>
+        <button type="submit" class="btn btn-success">Update</button>
+    </form>
+</div>
+
+</body>
