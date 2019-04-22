@@ -145,5 +145,15 @@ public class App {
             );
         });
 
+        post("/client/:id/delete", (req, res) -> {
+            Map<String, Object> model = new HashMap<>();
+            Client client = Client.find(Integer.parseInt(req.params(":id")));
+            client.delete();
+            res.redirect("/clients");
+            return new VelocityTemplateEngine().render(
+                    new ModelAndView(model, layout)
+            );
+        });
+
     }
 }

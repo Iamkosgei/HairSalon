@@ -5,7 +5,7 @@
             <h2>$client.getFirst_name() $client.getLast_name()</h2>
             <p><i class="fas fa-phone"></i> Phone: $client.getPhone()</p>
 
-            <form action="/stylist/$stylist.getId()/delete" method="post">
+            <form action="/client/$client.getId()/delete" method="post">
                 <button type="submit" class="btn btn-danger">Delete</button>
                 <a href="/stylist/$stylist.getId()/edit" class="btn btn-outline-success">Edit</a>
             </form>
