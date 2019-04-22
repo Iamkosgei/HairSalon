@@ -52,6 +52,16 @@ public class App {
             );
         });
 
+        get("/stylist/:id", (req, res) -> {
+            Map<String, Object> model = new HashMap<>();
+           Stylist stylist = Stylist.find(Integer.parseInt(req.params(":id")));
+            model.put("stylist", stylist);
+            model.put("template", "templates/stylist.vtl");
+            return new VelocityTemplateEngine().render(
+                    new ModelAndView(model, layout)
+            );
+        });
+
 
 
 
