@@ -98,4 +98,12 @@ class ClientTest {
         assertEquals(Client.find(newClient2.getId()), newClient2);
     }
 
+    @Test
+    public void delete_deletesClient_true() {
+        newClient.save();
+        int newClientId =newClient.getId();
+        newClient.delete();
+        assertEquals(null, Client.find(newClientId));
+    }
+
 }
