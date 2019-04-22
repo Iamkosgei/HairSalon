@@ -7,7 +7,7 @@ body,html
 
 .home-main
 {
-    background: url("/images/bg.png") center center/cover no-repeat;
+    background: url("/images/bg.jpg") center center/cover no-repeat;
     width: 100vw;
     height: 100vh;
 
