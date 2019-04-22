@@ -101,4 +101,20 @@ public class Client {
                     .executeUpdate();
         }
     }
+
+    public void update(String first_name,String last_name,String phone,String email,String country,String county,int stylistid) {
+        try(Connection con = DB.sql2o.open()) {
+            String sql = "UPDATE clients SET first_name = :first_name, last_name = :last_name, phone = :phone, email = :email, country = :country, county = :county, stylistid = :stylistid  WHERE id = :id";
+            con.createQuery(sql)
+                    .addParameter("first_name",first_name )
+                    .addParameter("last_name",last_name )
+                    .addParameter("phone",phone )
+                    .addParameter("email",email )
+                    .addParameter("country",country )
+                    .addParameter("county", county)
+                    .addParameter("stylistid", stylistid)
+                    .addParameter("id", id)
+                    .executeUpdate();
+        }
+    }
 }
